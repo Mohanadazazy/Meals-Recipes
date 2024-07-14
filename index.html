@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+                        <!-- Nav Section -->
+    <nav class="d-flex flex-column justify-content-between  p-4">
+        <ul class="list-unstyled text-white links">
+            <li id="search">Search</li>
+            <li id="cate">Categories</li>
+            <li id="area">Area</li>
+            <li id="ing">Ingredients</li>
+            <li id="contact">Contact Us</li>
+        </ul>
+        <div class="openCloseNav position-absolute start-100 bg-white h-100 w-25 top-0 d-flex flex-column justify-content-between py-4 px-2">
+            <div class="icon">
+                <img src="logo.png" class="w-100" alt="">
+            </div>
+            <i class="fa-solid fa-xmark d-flex justify-content-center fa-3x closeIcon"></i>
+            <div class="d-flex flex-column justify-content-center ">
+                <i class="fa-solid fa-globe d-flex justify-content-center pb-1"></i>
+                <i class="fa-solid fa-share-nodes d-flex justify-content-center"></i>
+            </div>
+        </div>
+        <div class="socialLInks text-white">
+           <div class="icons ">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+           </div>
+           <p>Copyright Â© 2019 All Rights<br>
+            Reserved.</p>
+        </div>
+    </nav>
+                    <!-- Displayed Details -->
+    <div class="detailsData d-none bg-black">
+        <div class="container py-5 bg-black">
+            <div class="row text-white detailsDisplay">
+            </div>
+        </div>
+    </div>
+                                   <!-- loading Page -->
+    <div class="loading position-absolute top-0 bottom-0 start-0 end-0  justify-content-center align-items-center">
+        <i class="fa-solid fa-spinner fa-spin fa-8x"></i>
+    </div>
+                            <!-- ----------------- -->
+                             
+    
+                            <!-- main Section -->
+    <main>
+        <div class="container Search">
+
+        </div>
+        <div class="container py-5">
+            <div class="row g-4 mainMeals">
+                
+                    
+                        
+                            <div class="col-md-6">
+                                <input id="nameInput" onkeyup="inputsValidation()" type="text" class="form-control" placeholder="Enter Your Name">
+                                <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Special characters and numbers not allowed
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input id="emailInput" onkeyup="inputsValidation()" type="email" class="form-control " placeholder="Enter Your Email">
+                                <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Email not valid *exemple@yyy.zzz
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input id="phoneInput" onkeyup="inputsValidation()" type="text" class="form-control " placeholder="Enter Your Phone">
+                                <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Enter valid Phone Number
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input id="ageInput" onkeyup="inputsValidation()" type="number" class="form-control " placeholder="Enter Your Age">
+                                <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Enter valid age
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input  id="passwordInput" onkeyup="inputsValidation()" type="password" class="form-control " placeholder="Enter Your Password">
+                                <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Enter valid password *Minimum eight characters, at least one letter and one number:*
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input  id="repasswordInput" onkeyup="inputsValidation()" type="password" class="form-control " placeholder="Repassword">
+                                <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Enter valid repassword 
+                                </div>
+                            </div>
+                        </div>
+        </div>
+    </main>
+    <section>
+        
+    </section>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
